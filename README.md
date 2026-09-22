@@ -37,21 +37,21 @@ This is the correct, minimal command for the job. Gatekeeper remains fully enabl
 
 ![Drag the script into Terminal](images/step1.png)
 
-**Step 2 — Enter the application name** (without `.app`) and click Continue
+**Step 2 — Enter the application name** (without `.app`) and click Continue.
 
 ![Enter the app name](images/step2.png)
 
-**Step 3 — Enter your admin password** and click Continue
+**Step 3 — Enter your admin password** and click Continue which will launch the unsigned app.
 
 ![Enter admin password](images/step3.png)
 
-**Step 4 — Close the Any Unsigned window**
+**Step 4 — Close the Any Unsigned window** and the unsigned app will close.
 
 ![Close the window](images/step4.png)
 
-**Step 5 — Open your newly authorized application normally**
+**Step 5 — Open your newly authorized application normally from now on**
 
-![Open the app](images/step5.png)
+![Open the app](images/open_app.png)
 
 ## Requirements
 
