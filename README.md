@@ -6,7 +6,7 @@ A safe, targeted alternative to disabling macOS Gatekeeper globally.
 
 When you download an application outside of the Mac App Store, macOS applies a quarantine flag to it. Rather than being upfront about this, macOS will falsely claim the app is damaged or corrupted — it isn't. This is a deliberate warning designed to discourage running unsigned software.
 
-![macOS falsely claiming the app is damaged](images/unsigend_example.png)
+![macOS falsely claiming the app is damaged](images/unsigned_example.png)
 
 The common workarounds you'll find online are broad and risky:
 
