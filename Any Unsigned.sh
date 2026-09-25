@@ -84,7 +84,14 @@ APPLESCRIPT
 
     if [ $? -ne 0 ]; then exit 1; fi
 
-    printf '%s\n' "$PASSWORD" | sudo -S xattr -dr com.apple.quarantine "$Game"
+   printf '%s\n' "$PASSWORD" | sudo -S xattr -dr com.apple.quarantine "$Game"
+
+if xattr -lr "$Game" 2>/dev/null | grep -q com.apple.quarantine; then
+    osascript -e "display dialog \"Unable to remove quarantine from $DisplayName.\" with title \"$DisplayName\" buttons {\"OK\"} default button \"OK\" with icon stop"
+    exit 1
+fi
+
+open "$Game"
 
     if [ $? -ne 0 ]; then
         osascript -e "display dialog \"Not authorized. Use admin password\" with title \"$DisplayName\" buttons {\"OK\"} default button \"OK\" with icon stop"
